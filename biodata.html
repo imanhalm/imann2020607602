@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>My Biodata</title>
+</head>
+
+
+<a name="MY_FIRST_ANCHOR"> </a>
+
+
+<link href="asset/css/biodata.css"rel="stylesheet">
+<br>
+
+<div class="topnav">
+  <a href="resume.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="education.html">Education</a>
+  <a href="achievement.html">Achievement</a>
+
+</div>
+
+<br>
+<audio autoplay controls loop>
+<source src="asset/audio/Rewrite the Stars.mp3"> type="audio/mpeg">
+</audio>
+
+<h2>HELLO !</h2>
+
+
+
+
+
+ <div class="c">
+    <h1>Nurul Iman Binti Abdul Halim</h1>
+
+Hi, I'm Iman. I'm 20 years old and I am the youngest of 8 siblings. 
+</div>
+
+<div class="d">
+<img src="asset/images/imancafe.jpg" width="53%" height="77%">
+</d>
+</div>
+<div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="h" style="color:black;">
+
+  <b>MY HOBBY</b>
+<center><br>Playing sports.</center>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="asset/images/hiking.jpg" style="width:100%">
+  <div class="text">Hiking</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="asset/images/netball1.jpg" style="width:100%">
+  <div class="text">Netball</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="asset/images/netball2.jpg" style="width:100%">
+  <div class="text">Netball</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="asset/images/netball3.jpg" style="width:100%">
+  <div class="text">Netball</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="asset/images/badminton.jpg" style="width:100%">
+  <div class="text">Badminton</div>
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<br>
+<center><i>"I am very skilled in sports because when I was in primary school, I have joined 'Merentas Desa'. Then, when I was in secondary school, I also presented in MSSWP netball for my school. At first, I am not good at playing netball but as my ability a quick learner just by watching people play netball I can master it too."</center></i>
+
+</div>
+</div>
+
+<br>
+<div class="I" style="color:black;">
+
+  <b>MY AMBITION</b>
+<center><br>Professor Title.</center>
+<br>
+
+
+    <center><i>"I always wanted to be a lecturer because I want to be like my father. Since I was a child,
+ one of my main memories was watching my father came back home after working in the university. That is one of
+ the reasons, to be like my father. Besides, in my family, nobody is following my father's step to be a lecturer and I
+ want my mom to be proud of me to be the only one doing it. My father died when I was in standard one. I think
+ that is the only one way I can repay all my mother's effort in raising me and my siblings as a single mother. Besides, I
+ am interested in teaching. Everytime I teach my friends, I will make sure that they understand what I am trying to
+ deliver because I understand someone's feeling when they do not understand what is being taught in class.
+ Sometimes it may because the teacher does not teach them properly. For me, when we teach someone, our
+ memory will be stronger."</center></i>
+<br>
+
+<center><img src="asset/images/ayah3.jpg" alt="Trulli" width="600" height="400"></center>
+
+</div>
+
+<br>
+<div class="j" style="color:black;">
+
+  <b>MY BIRTHDAY</b></center>
+<h1><center><br>11<sup>th</sup> December 2002.</center></h1>
+
+<h2><center>My next birthday countdown; </center></h2>
+
+<center><k id="demo"></k></center>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 11, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</div>
+
+<br>
+<div class="i" style="color:black;">
+
+
+
+<b>More Details About Me;<b>
+<br><br>
+<table>
+  <tr>
+    <th>Name:</th>
+    <td>NURUL IMAN BINTI ABDUL HALIM</td>
+  </tr>
+  <tr>
+    <th>Email:</th>  
+    <td>imanhalimm@gmail.com</td>      
+  </tr>  
+     <tr>
+    <th>Adress:</th>  
+    <td>F71, KG MELAYU SERI KUNDANG, 48050, RAWANG, SELANGOR DARUL EHSAN</td>      
+  </tr>  
+ <tr>
+    <th rowspan="2">Phone:</th>
+    <td>010-2800725</td>
+  </tr>
+  <tr>
+    <td>013-3335665 (MOM)</td>
+  </tr>
+
+    <tr>
+    <th>Father:</th>  
+    <td>ABDUL HALIM BIN MAT DIAH</td>      
+  </tr>  
+    <tr>
+    <th>Mother:</th>  
+    <td>NUREEDAE DAKOHA</td>      
+  </tr>  
+  
+</table>
+
+
+
+</div>
+
+</body>
+
+<br><br>
+
+<center><a href="#MY_FIRST_ANCHOR"> <img src="asset/images/arrow.png" width="90px" heigh="90px"> </a></center>
+
+<div class="footer">
+  <a href="https://www.instagram.com/iman.hlm/" target="_blank"> <img src="asset/images/ig.png" width="85px" heigh="85px"></a>
+  <a href="https://twitter.com/imanhalm" target="_blank"> <img src="asset/images/twitter3.png" width="65px" heigh="65px"></a>
+  <a href="https://www.facebook.com/iman.halim.39" target="_blank"> <img src="asset/images/facebook.png" width="80px" heigh="80px"></a>
+  <a href="https://wa.me/60102800725" target="_blank"> <img src="asset/images/whatsapp.png" width="60px" heigh="60px"></a>
+</div>
+
+
+</html>
+
+
+
+
+
+
